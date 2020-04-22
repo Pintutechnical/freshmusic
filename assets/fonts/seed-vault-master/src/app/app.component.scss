@@ -1,0 +1,39 @@
+@import '../defaults/colors.scss';
+
+.app {
+    background: url(../assets/seed-vault.png) no-repeat top 80px right;
+    background-size: contain;
+    background-attachment: fixed;
+    color: $clr-dark;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+
+    header {
+        position: fixed;
+        text-align: center;
+        background: $clr-blue-drk;
+        background-image: linear-gradient(to bottom, $clr-gray-50, $clr-gray-10);
+        width: 100%;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .header-btn {
+            margin: 13px 5px;
+        }
+
+        h1 {
+            color: #fff;
+            margin: 0;
+            padding: 12px 0;
+        }
+    }
+
+    .content {
+        margin-top: 70px;
+        flex: 1;
+        padding: 1.0em 2.0em;
+    }
+}

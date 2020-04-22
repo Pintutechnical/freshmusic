@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+// Libraries
+@import '~normalize.css/normalize';
+@import '../node_modules/primeng/resources/themes/nova-light/theme.css';
+
+// Defaults
+@import './defaults/animations';
+@import './defaults/colors';
+@import './defaults/tags';
+@import './defaults/typography';
+
+// Overrides
+@import './defaults/overrides';
+
+// Components & Pages loaded separately
+
+h1:first-of-type {
+    margin: 3px 0;
+}
+
+.col-icon-btn {
+    width: 50px;
+    text-align: center;
+
+    button {
+        padding: 0;
+        font-size: 0.9em !important;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+ul.unstyled {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}

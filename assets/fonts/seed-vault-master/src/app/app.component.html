@@ -1,0 +1,14 @@
+<div class="app">
+    <header>
+        <seed-authentication></seed-authentication>
+        <h1>Seed Vault</h1>
+        <div class="header-btn">
+            <button pButton type="button" class="ui-button-secondary" label="Seed Spec" icon="fa fa-external-link"
+                    (click)="onClick($event)"></button>
+        </div>
+    </header>
+    <div class="content">
+        <router-outlet></router-outlet>
+    </div>
+    <p-toast></p-toast>
+</div>
